@@ -1,0 +1,337 @@
+{
+  "_meta": {
+    "reviewed": false,
+    "note": "Lao translations drafted by AI — please have a native speaker review before production."
+  },
+  "language": {
+    "en": "English",
+    "lo": "ລາວ",
+    "th": "ไทย",
+    "switch": "ປ່ຽນພາສາ"
+  },
+  "nav": {
+    "brand": "Secondhand",
+    "messages": "ຂໍ້ຄວາມ",
+    "messagesUnread": "ຂໍ້ຄວາມ ({{count}} ຍັງບໍ່ໄດ້ອ່ານ)",
+    "favorites": "ລາຍການທີ່ມັກ ({{count}})",
+    "sell": "ຂາຍ",
+    "logIn": "ເຂົ້າສູ່ລະບົບ",
+    "signUp": "ສະໝັກ",
+    "logOut": "ອອກຈາກລະບົບ"
+  },
+  "logout": {
+    "title": "ອອກຈາກລະບົບບໍ່?",
+    "message": "ທ່ານຈະຕ້ອງເຂົ້າສູ່ລະບົບໃໝ່ເພື່ອຊື້, ຂາຍ ຫຼື ສົ່ງຂໍ້ຄວາມ.",
+    "confirm": "ອອກຈາກລະບົບ",
+    "cancel": "ຢູ່ໃນລະບົບຕໍ່"
+  },
+  "footer": {
+    "tagline": "ຊື້ ແລະ ຂາຍເຄື່ອງມືສອງກັບຄົນໃກ້ຕົວ. ບໍ່ມີການຈັດສົ່ງ, ບໍ່ມີຄົນກາງ — ພຽງແຕ່ນັດພົບ ແລະ ສົ່ງມອບ.",
+    "marketplace": "ຕະຫຼາດ",
+    "browse": "ເບິ່ງລາຍການ",
+    "sell": "ຂາຍເຄື່ອງ",
+    "account": "ບັນຊີ",
+    "dashboard": "ໜ້າຈັດການ",
+    "messages": "ຂໍ້ຄວາມ",
+    "profile": "ໂປຣໄຟລ໌ຂອງທ່ານ",
+    "logIn": "ເຂົ້າສູ່ລະບົບ",
+    "createAccount": "ສ້າງບັນຊີ",
+    "forgotPassword": "ລືມລະຫັດຜ່ານ",
+    "copyright": "© {{year}} Secondhand. ໂຄງການຕະຫຼາດທ້ອງຖິ່ນ."
+  },
+  "common": {
+    "loading": "ກຳລັງໂຫຼດ…",
+    "tryAgain": "ລອງໃໝ່",
+    "cancel": "ຍົກເລີກ",
+    "somethingWrong": "ມີບາງຢ່າງຜິດພາດ. ກະລຸນາລອງໃໝ່."
+  },
+  "condition": {
+    "new": "ໃໝ່",
+    "like_new": "ຄືໃໝ່",
+    "good": "ດີ",
+    "fair": "ພໍໃຊ້",
+    "for_parts": "ສຳລັບອາໄຫຼ່"
+  },
+  "listing": {
+    "noPhoto": "ບໍ່ມີຮູບ",
+    "unknownLocation": "ບໍ່ຮູ້ສະຖານທີ່",
+    "save": "ບັນທຶກເປັນລາຍການທີ່ມັກ",
+    "remove": "ລຶບອອກຈາກລາຍການທີ່ມັກ"
+  },
+  "category": {
+    "electronics": "ເອເລັກໂຕຣນິກ",
+    "phones": "ໂທລະສັບ",
+    "iphone": "iPhone",
+    "laptops": "ແລັບທັອບ",
+    "furniture": "ເຟີນິເຈີ",
+    "chairs": "ຕັ່ງ",
+    "bikes": "ລົດຖີບ"
+  },
+  "auth": {
+    "emailLabel": "ອີເມວ",
+    "emailPlaceholder": "you@example.com",
+    "passwordLabel": "ລະຫັດຜ່ານ",
+    "login": {
+      "title": "ຍິນດີຕ້ອນຮັບກັບມາ",
+      "subtitle": "ເຂົ້າສູ່ລະບົບເພື່ອຊື້ ແລະ ຂາຍກັບຄົນໃກ້ຕົວ.",
+      "forgot": "ລືມລະຫັດຜ່ານ?",
+      "remember": "ຈື່ຂ້ອຍໄວ້",
+      "submit": "ເຂົ້າສູ່ລະບົບ",
+      "submitting": "ກຳລັງເຂົ້າສູ່ລະບົບ…",
+      "noAccount": "ຍັງບໍ່ມີບັນຊີ?",
+      "signUp": "ສະໝັກ"
+    },
+    "register": {
+      "title": "ສ້າງບັນຊີ",
+      "subtitle": "ຊື້ ແລະ ຂາຍກັບຄົນໃກ້ຕົວ.",
+      "displayName": "ຊື່ທີ່ສະແດງ",
+      "displayNamePlaceholder": "Ada Lovelace",
+      "city": "ເມືອງ",
+      "cityPlaceholder": "ວຽງຈັນ",
+      "cityHint": "ຜູ້ຊື້ກັ່ນຕອງຕາມທີ່ຕັ້ງ, ແລະ ທຸກລາຍການທີ່ທ່ານລົງຈະຖືກຕິດປ້າຍດ້ວຍເມືອງນີ້.",
+      "passwordHint": "ຢ່າງໜ້ອຍ {{count}} ຕົວອັກສອນ.",
+      "passwordTooShort": "ລະຫັດຜ່ານຕ້ອງມີຢ່າງໜ້ອຍ {{count}} ຕົວອັກສອນ",
+      "submit": "ສ້າງບັນຊີ",
+      "submitting": "ກຳລັງສ້າງບັນຊີ…",
+      "haveAccount": "ມີບັນຊີແລ້ວ?",
+      "logIn": "ເຂົ້າສູ່ລະບົບ"
+    },
+    "forgot": {
+      "title": "ຕັ້ງລະຫັດຜ່ານໃໝ່",
+      "subtitle": "ໃສ່ອີເມວຂອງທ່ານ ແລ້ວພວກເຮົາຈະສົ່ງລິ້ງໃຫ້.",
+      "submit": "ສົ່ງລິ້ງຕັ້ງລະຫັດຜ່ານໃໝ່",
+      "submitting": "ກຳລັງສົ່ງ…",
+      "remembered": "ຈື່ໄດ້ແລ້ວ?",
+      "logIn": "ເຂົ້າສູ່ລະບົບ",
+      "sentTitle": "ກວດເບິ່ງກ່ອງຈົດໝາຍຂອງທ່ານ",
+      "sentSubtitle": "ພວກເຮົາໄດ້ເຮັດສິ່ງທີ່ເຮັດໄດ້ແລ້ວ.",
+      "backToLogin": "ກັບໄປໜ້າເຂົ້າສູ່ລະບົບ",
+      "sentNotice": "ຖ້າມີບັນຊີສຳລັບ {{email}}, ພວກເຮົາໄດ້ສົ່ງລິ້ງເພື່ອຕັ້ງລະຫັດຜ່ານໃໝ່ໃຫ້ແລ້ວ. ມັນຈະໝົດອາຍຸພາຍໃນໜຶ່ງຊົ່ວໂມງ.",
+      "spamHint": "ບໍ່ໄດ້ຮັບຫຍັງບໍ? ກວດເບິ່ງໂຟນເດີສະແປມ, ແລ້ວ",
+      "tryAnother": "ລອງອີເມວອື່ນ",
+      "retires": ". ການສົ່ງລິ້ງໃໝ່ຈະຍົກເລີກລິ້ງເກົ່າ."
+    },
+    "reset": {
+      "title": "ເລືອກລະຫັດຜ່ານໃໝ່",
+      "subtitle": "ລິ້ງນີ້ໃຊ້ໄດ້ຄັ້ງດຽວ ແລະ ພຽງໃນຊົ່ວໂມງຕໍ່ໄປເທົ່ານັ້ນ.",
+      "newPassword": "ລະຫັດຜ່ານໃໝ່",
+      "confirmPassword": "ຢືນຢັນລະຫັດຜ່ານໃໝ່",
+      "passwordHint": "ຢ່າງໜ້ອຍ {{count}} ຕົວອັກສອນ.",
+      "passwordTooShort": "ລະຫັດຜ່ານຕ້ອງມີຢ່າງໜ້ອຍ {{count}} ຕົວອັກສອນ",
+      "mismatch": "ລະຫັດຜ່ານບໍ່ກົງກັນ.",
+      "submit": "ຕັ້ງລະຫັດຜ່ານໃໝ່",
+      "submitting": "ກຳລັງບັນທຶກ…",
+      "changedMind": "ປ່ຽນໃຈບໍ?",
+      "logIn": "ເຂົ້າສູ່ລະບົບ",
+      "doneTitle": "ປ່ຽນລະຫັດຜ່ານແລ້ວ",
+      "doneSubtitle": "ຕອນນີ້ທ່ານສາມາດເຂົ້າສູ່ລະບົບດ້ວຍມັນໄດ້ແລ້ວ.",
+      "doneNotice": "ລະຫັດຜ່ານຂອງທ່ານໄດ້ຖືກອັບເດດແລ້ວ ແລະ ລິ້ງຕັ້ງລະຫັດຜ່ານໃໝ່ໄດ້ຖືກໃຊ້ໄປແລ້ວ. ລິ້ງອື່ນໆທີ່ທ່ານຮ້ອງຂໍຈະໃຊ້ບໍ່ໄດ້ອີກຕໍ່ໄປ.",
+      "incompleteTitle": "ລິ້ງນີ້ບໍ່ຄົບຖ້ວນ",
+      "incompleteSubtitle": "ມັນຂາດສ່ວນທີ່ພິສູດວ່າມັນເປັນຂອງທ່ານ.",
+      "noToken": "ບໍ່ພົບໂທເຄັນຕັ້ງລະຫັດຜ່ານໃໝ່ໃນ URL ນີ້.",
+      "copyWholeLink": "ກັອບປີ້ລິ້ງທັງໝົດຈາກອີເມວ, ຫຼື",
+      "requestNew": "ຮ້ອງຂໍລິ້ງໃໝ່"
+    }
+  },
+  "browse": {
+    "title": "ເບິ່ງລາຍການ",
+    "subtitle": "ເຄື່ອງມືສອງຈາກຄົນໃກ້ຕົວ.",
+    "searchPlaceholder": "ຄົ້ນຫາລາຍການ…",
+    "searchLabel": "ຄົ້ນຫາລາຍການ",
+    "allCities": "ທຸກເມືອງ",
+    "filterByCity": "ກັ່ນຕອງຕາມເມືອງ",
+    "categoryAll": "ທັງໝົດ",
+    "noneFoundTitle": "ບໍ່ພົບລາຍການ",
+    "widenSearch": "ລອງຂະຫຍາຍການຄົ້ນຫາ.",
+    "nothingPosted": "ຍັງບໍ່ມີການລົງປະກາດ.",
+    "clearFilters": "ລ້າງຕົວກັ່ນຕອງ",
+    "loadMore": "ໂຫຼດເພີ່ມ",
+    "loadMoreError": "ບໍ່ສາມາດໂຫຼດລາຍການເພີ່ມໄດ້.",
+    "favoriteError": "ບໍ່ສາມາດອັບເດດລາຍການທີ່ມັກໄດ້."
+  },
+  "status": {
+    "active": "ກຳລັງຂາຍ",
+    "pending": "ລໍຖ້າຊື້ຂາຍ",
+    "sold": "ຂາຍແລ້ວ",
+    "removed": "ຖືກລຶບ"
+  },
+  "orderStatus": {
+    "pending": "ລໍຖ້າຊຳລະ",
+    "paid": "ຊຳລະແລ້ວ",
+    "completed": "ສຳເລັດ",
+    "cancelled": "ຍົກເລີກ",
+    "refunded": "ຄືນເງິນແລ້ວ"
+  },
+  "notFound": {
+    "title": "ບໍ່ພົບໜ້ານີ້",
+    "back": "ກັບໄປໜ້າຄົ້ນຫາ"
+  },
+  "listingDetail": {
+    "backToBrowse": "ກັບໄປໜ້າຄົ້ນຫາ",
+    "notFoundTitle": "ບໍ່ພົບລາຍການ",
+    "notFoundBody": "ອາດຈະຖືກຂາຍ ຫຼື ຖືກເອົາລົງແລ້ວ.",
+    "errorTitle": "ມີບາງຢ່າງຜິດພາດ",
+    "viewImage": "ເບິ່ງຮູບ {{index}}",
+    "listed": "ລົງປະກາດເມື່ອ {{time}}",
+    "inCategory": "ໃນໝວດ {{category}}",
+    "description": "ລາຍລະອຽດ",
+    "placingOrder": "ກຳລັງສັ່ງຊື້…",
+    "buyFor": "ຊື້ໃນລາຄາ {{price}}",
+    "messageSeller": "ສົ່ງຂໍ້ຄວາມຫາຜູ້ຂາຍ",
+    "editListing": "ແກ້ໄຂລາຍການ",
+    "pendingByOther": "ມີຄົນອື່ນກຳລັງລໍຖ້າຊື້ສິນຄ້ານີ້ຢູ່.",
+    "save": "ບັນທຶກ",
+    "saved": "ບັນທຶກແລ້ວ",
+    "someoneBought": "ມີຄົນຫາກໍຊື້ໄປແລ້ວ. ກຳລັງໂຫຼດໃໝ່…",
+    "couldNotOrder": "ບໍ່ສາມາດສັ່ງຊື້ໄດ້.",
+    "seller": "ຜູ້ຂາຍ",
+    "noReviewsYet": "ຍັງບໍ່ມີການຣີວິວ",
+    "reviewCount_other": "{{count}} ຣີວິວ",
+    "showAllReviews": "ສະແດງທັງໝົດ {{count}} ຣີວິວ"
+  },
+  "dashboard": {
+    "title": "ໜ້າຈັດການຂອງທ່ານ",
+    "noCity": "ຍັງບໍ່ໄດ້ຕັ້ງເມືອງ",
+    "tabs": {
+      "listings": "ລາຍການຂອງຂ້ອຍ",
+      "orders": "ຄຳສັ່ງຊື້",
+      "favorites": "ລາຍການທີ່ມັກ"
+    },
+    "listings": {
+      "loadError": "ບໍ່ສາມາດໂຫຼດລາຍການຂອງທ່ານໄດ້.",
+      "removeError": "ບໍ່ສາມາດລຶບລາຍການນັ້ນໄດ້.",
+      "emptyTitle": "ທ່ານຍັງບໍ່ໄດ້ລົງລາຍການໃດເລີຍ",
+      "sellCta": "ຂາຍເຄື່ອງ",
+      "removing": "ກຳລັງລຶບ…",
+      "remove": "ລຶບ",
+      "edit": "ແກ້ໄຂ",
+      "listed": "ລົງປະກາດເມື່ອ {{time}}"
+    },
+    "orders": {
+      "loadError": "ບໍ່ສາມາດໂຫຼດຄຳສັ່ງຊື້ໄດ້.",
+      "updateError": "ບໍ່ສາມາດອັບເດດຄຳສັ່ງຊື້ນັ້ນໄດ້.",
+      "emptyTitle": "ຍັງບໍ່ມີຄຳສັ່ງຊື້",
+      "emptyBody": "ສິ່ງທີ່ທ່ານຊື້ ແລະ ຂາຍຈະສະແດງຢູ່ນີ້.",
+      "buying": "ກຳລັງຊື້",
+      "selling": "ກຳລັງຂາຍ",
+      "from": "ຈາກ",
+      "to": "ຫາ",
+      "leaveReview": "ຂຽນຣີວິວ",
+      "reviewed": "ຣີວິວແລ້ວ"
+    },
+    "actions": {
+      "markPaid": "ໝາຍວ່າຊຳລະແລ້ວ",
+      "markCompleted": "ໝາຍວ່າສຳເລັດ",
+      "cancel": "ຍົກເລີກ",
+      "refund": "ຄືນເງິນ"
+    },
+    "review": {
+      "prompt": "ປະສົບການຂອງທ່ານກັບ {{name}} ເປັນແນວໃດ?",
+      "needRating": "ເລືອກຄະແນນ 1 ຫາ 5 ດາວ.",
+      "saveError": "ບໍ່ສາມາດບັນທຶກຣີວິວນັ້ນໄດ້.",
+      "placeholder": "ມີຫຍັງທີ່ຄວນຮູ້ບໍ? (ບໍ່ບັງຄັບ)",
+      "posting": "ກຳລັງໂພສ…",
+      "post": "ໂພສຣີວິວ",
+      "cancel": "ຍົກເລີກ",
+      "label": "ຣີວິວ"
+    },
+    "favorites": {
+      "loadError": "ບໍ່ສາມາດໂຫຼດລາຍການທີ່ມັກຂອງທ່ານໄດ້.",
+      "emptyTitle": "ຍັງບໍ່ໄດ້ບັນທຶກຫຍັງເລີຍ",
+      "emptyBody": "ກົດຮູບຫົວໃຈໃນລາຍການໃດກໍໄດ້ເພື່ອບັນທຶກໄວ້ຢູ່ນີ້.",
+      "browseCta": "ເບິ່ງລາຍການ"
+    }
+  },
+  "messages": {
+    "title": "ຂໍ້ຄວາມ",
+    "loadError": "ບໍ່ສາມາດໂຫຼດການສົນທະນາໄດ້.",
+    "threadLoadError": "ບໍ່ສາມາດໂຫຼດການສົນທະນານັ້ນໄດ້.",
+    "sendError": "ບໍ່ສາມາດສົ່ງຂໍ້ຄວາມນັ້ນໄດ້.",
+    "emptyThreads": "ຍັງບໍ່ມີການສົນທະນາ. ສົ່ງຂໍ້ຄວາມຫາຜູ້ຂາຍຈາກລາຍການໃດກໍໄດ້.",
+    "selectConversation": "ເລືອກການສົນທະນາ.",
+    "conversation": "ການສົນທະນາ",
+    "listingFallback": "ລາຍການ #{{id}}",
+    "noMessages": "ຍັງບໍ່ມີຂໍ້ຄວາມ. ທັກທາຍໄດ້ເລີຍ.",
+    "youPrefix": "ທ່ານ: ",
+    "writeMessage": "ຂຽນຂໍ້ຄວາມ…",
+    "messageLabel": "ຂໍ້ຄວາມ",
+    "sending": "ກຳລັງສົ່ງ…",
+    "send": "ສົ່ງ",
+    "activeNow": "ກຳລັງອອນລາຍ",
+    "offline": "ອອບລາຍ",
+    "lastSeen": "ເຫັນຫຼ້າສຸດ {{time}}",
+    "receiptRead": "ອ່ານແລ້ວ",
+    "receiptSent": "ສົ່ງແລ້ວ"
+  },
+  "profile": {
+    "title": "ໂປຣໄຟລ໌ຂອງທ່ານ",
+    "subtitle": "ນີ້ແມ່ນສິ່ງທີ່ຜູ້ຊື້ ແລະ ຜູ້ຂາຍເຫັນເມື່ອຕິດຕໍ່ກັບທ່ານ.",
+    "uploadError": "ບໍ່ສາມາດອັບໂຫຼດຮູບນັ້ນໄດ້.",
+    "nameRequired": "ຕ້ອງມີຊື່ທີ່ສະແດງ.",
+    "saved": "ບັນທຶກໂປຣໄຟລ໌ແລ້ວ.",
+    "avatarAlt": "ຮູບໂປຣໄຟລ໌ຂອງທ່ານ",
+    "uploading": "ກຳລັງອັບໂຫຼດ…",
+    "changePhoto": "ປ່ຽນຮູບ",
+    "uploadPhoto": "ອັບໂຫຼດຮູບ",
+    "remove": "ລຶບ",
+    "photoHint": "JPEG, PNG, WebP ຫຼື GIF, ບໍ່ເກີນ 10MB.",
+    "displayName": "ຊື່ທີ່ສະແດງ",
+    "city": "ເມືອງ",
+    "cityPlaceholder": "ວຽງຈັນ",
+    "cityHint": "ລາຍການໃໝ່ຈະຖືກຕິດປ້າຍດ້ວຍເມືອງນີ້. ລາຍການທີ່ທ່ານລົງໄປແລ້ວຈະຮັກສາເມືອງເດີມໄວ້.",
+    "phone": "ໂທລະສັບ",
+    "optional": "(ບໍ່ບັງຄັບ)",
+    "email": "ອີເມວ",
+    "emailHint": "ບໍ່ສາມາດປ່ຽນອີເມວໄດ້ຢູ່ນີ້.",
+    "uploadingPhoto": "ກຳລັງອັບໂຫຼດຮູບ…",
+    "saving": "ກຳລັງບັນທຶກ…",
+    "saveChanges": "ບັນທຶກການປ່ຽນແປງ"
+  },
+  "listingForm": {
+    "title": "ຫົວຂໍ້",
+    "titlePlaceholder": "iPhone 12 Mini, 128GB, unlocked",
+    "price": "ລາຄາ",
+    "pricePlaceholder": "34.50",
+    "condition": "ສະພາບ",
+    "category": "ໝວດໝູ່",
+    "optional": "(ບໍ່ບັງຄັບ)",
+    "noCategory": "ບໍ່ມີໝວດໝູ່",
+    "description": "ລາຍລະອຽດ",
+    "descriptionPlaceholder": "ສະພາບ, ຈຸດທີ່ຄວນຮູ້, ເຫດຜົນທີ່ຂາຍ…",
+    "photos": "ຮູບພາບ",
+    "photosHint": "(ຮູບທຳອິດເປັນໜ້າປົກ)",
+    "titleRequired": "ຕ້ອງມີຫົວຂໍ້",
+    "priceInvalid": "ລາຄາຕ້ອງເປັນຕົວເລກ ທົດສະນິຍົມບໍ່ເກີນ 2 ຕຳແໜ່ງ ຕົວຢ່າງ 19.99",
+    "cancel": "ຍົກເລີກ",
+    "uploadingPhotos": "ກຳລັງອັບໂຫຼດຮູບ…"
+  },
+  "create": {
+    "title": "ຂາຍເຄື່ອງ",
+    "subtitle": "ລາຍການຂອງທ່ານຈະຖືກຕິດປ້າຍດ້ວຍເມືອງໃນໂປຣໄຟລ໌ຂອງທ່ານ.",
+    "submit": "ລົງປະກາດ",
+    "submitting": "ກຳລັງລົງປະກາດ…"
+  },
+  "edit": {
+    "title": "ແກ້ໄຂລາຍການ",
+    "subtitle": "ການປ່ຽນແປງຈະມີຜົນທັນທີເມື່ອບັນທຶກ.",
+    "submit": "ບັນທຶກການປ່ຽນແປງ",
+    "submitting": "ກຳລັງບັນທຶກ…",
+    "loadErrorTitle": "ບໍ່ສາມາດແກ້ໄຂລາຍການນີ້ໄດ້",
+    "notOwner": "ທ່ານແກ້ໄຂໄດ້ສະເພາະລາຍການຂອງທ່ານເອງ.",
+    "notFound": "ລາຍການນີ້ບໍ່ມີຢູ່ແລ້ວ.",
+    "invalidId": "ໄອດີລາຍການບໍ່ຖືກຕ້ອງ.",
+    "backToListings": "ກັບໄປທີ່ລາຍການຂອງທ່ານ"
+  },
+  "uploader": {
+    "addMore_other": "ທ່ານເພີ່ມໄດ້ອີກ {{count}} ຮູບ.",
+    "uploadFailed": "ອັບໂຫຼດລົ້ມເຫລວ. ລອງໃໝ່ອີກຄັ້ງ.",
+    "cover": "ໜ້າປົກ",
+    "movePhotoEarlier": "ຍ້າຍຮູບ {{index}} ໄປກ່ອນ",
+    "movePhotoLater": "ຍ້າຍຮູບ {{index}} ໄປຫຼັງ",
+    "removePhoto": "ລຶບຮູບ {{index}}",
+    "uploading": "ກຳລັງອັບໂຫຼດ…",
+    "choosePhotos": "ຄລິກເພື່ອເລືອກຮູບ",
+    "uploadingHint": "ກະລຸນາລໍຖ້າ — ອາດໃຊ້ເວລາໜ້ອຍໜຶ່ງຖ້າອິນເຕີເນັດຊ້າ.",
+    "dragHint": "ຫຼື ລາກມາວາງບ່ອນນີ້. JPEG, PNG, WebP ຫຼື GIF, ບໍ່ເກີນ 10MB. ເຫຼືອ {{count}} ຮູບ."
+  }
+}

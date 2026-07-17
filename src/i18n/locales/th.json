@@ -1,0 +1,337 @@
+{
+  "_meta": {
+    "reviewed": false,
+    "note": "Thai translations drafted by AI — please have a native speaker review before production."
+  },
+  "language": {
+    "en": "English",
+    "lo": "ລາວ",
+    "th": "ไทย",
+    "switch": "เปลี่ยนภาษา"
+  },
+  "nav": {
+    "brand": "Secondhand",
+    "messages": "ข้อความ",
+    "messagesUnread": "ข้อความ ({{count}} ยังไม่ได้อ่าน)",
+    "favorites": "รายการโปรด ({{count}})",
+    "sell": "ขาย",
+    "logIn": "เข้าสู่ระบบ",
+    "signUp": "สมัคร",
+    "logOut": "ออกจากระบบ"
+  },
+  "logout": {
+    "title": "ออกจากระบบหรือไม่?",
+    "message": "คุณจะต้องเข้าสู่ระบบอีกครั้งเพื่อซื้อ ขาย หรือส่งข้อความ",
+    "confirm": "ออกจากระบบ",
+    "cancel": "อยู่ในระบบต่อ"
+  },
+  "footer": {
+    "tagline": "ซื้อและขายของมือสองกับคนใกล้ตัว ไม่มีการจัดส่ง ไม่มีคนกลาง — แค่นัดเจอแล้วส่งมอบ",
+    "marketplace": "ตลาด",
+    "browse": "ดูรายการ",
+    "sell": "ขายสินค้า",
+    "account": "บัญชี",
+    "dashboard": "แดชบอร์ดของคุณ",
+    "messages": "ข้อความ",
+    "profile": "โปรไฟล์ของคุณ",
+    "logIn": "เข้าสู่ระบบ",
+    "createAccount": "สร้างบัญชี",
+    "forgotPassword": "ลืมรหัสผ่าน",
+    "copyright": "© {{year}} Secondhand. โปรเจกต์ตลาดท้องถิ่น"
+  },
+  "common": {
+    "loading": "กำลังโหลด…",
+    "tryAgain": "ลองอีกครั้ง",
+    "cancel": "ยกเลิก",
+    "somethingWrong": "เกิดข้อผิดพลาด กรุณาลองใหม่อีกครั้ง"
+  },
+  "condition": {
+    "new": "ใหม่",
+    "like_new": "เหมือนใหม่",
+    "good": "ดี",
+    "fair": "พอใช้",
+    "for_parts": "สำหรับอะไหล่"
+  },
+  "listing": {
+    "noPhoto": "ไม่มีรูป",
+    "unknownLocation": "ไม่ทราบตำแหน่ง",
+    "save": "บันทึกเป็นรายการโปรด",
+    "remove": "นำออกจากรายการโปรด"
+  },
+  "category": {
+    "electronics": "อิเล็กทรอนิกส์",
+    "phones": "โทรศัพท์",
+    "iphone": "iPhone",
+    "laptops": "แล็ปท็อป",
+    "furniture": "เฟอร์นิเจอร์",
+    "chairs": "เก้าอี้",
+    "bikes": "จักรยาน"
+  },
+  "auth": {
+    "emailLabel": "อีเมล",
+    "emailPlaceholder": "you@example.com",
+    "passwordLabel": "รหัสผ่าน",
+    "login": {
+      "title": "ยินดีต้อนรับกลับมา",
+      "subtitle": "เข้าสู่ระบบเพื่อซื้อและขายกับคนใกล้ตัว",
+      "forgot": "ลืมรหัสผ่าน?",
+      "remember": "จดจำฉันไว้",
+      "submit": "เข้าสู่ระบบ",
+      "submitting": "กำลังเข้าสู่ระบบ…",
+      "noAccount": "ยังไม่มีบัญชี?",
+      "signUp": "สมัคร"
+    },
+    "register": {
+      "title": "สร้างบัญชี",
+      "subtitle": "ซื้อและขายกับคนใกล้ตัว",
+      "displayName": "ชื่อที่แสดง",
+      "displayNamePlaceholder": "Ada Lovelace",
+      "city": "เมือง",
+      "cityPlaceholder": "กรุงเทพฯ",
+      "cityHint": "ผู้ซื้อกรองตามที่ตั้ง และทุกรายการที่คุณลงจะถูกติดป้ายด้วยเมืองนี้",
+      "passwordHint": "อย่างน้อย {{count}} ตัวอักษร",
+      "passwordTooShort": "รหัสผ่านต้องมีอย่างน้อย {{count}} ตัวอักษร",
+      "submit": "สร้างบัญชี",
+      "submitting": "กำลังสร้างบัญชี…",
+      "haveAccount": "มีบัญชีอยู่แล้ว?",
+      "logIn": "เข้าสู่ระบบ"
+    },
+    "forgot": {
+      "title": "รีเซ็ตรหัสผ่านของคุณ",
+      "subtitle": "กรอกอีเมลของคุณ แล้วเราจะส่งลิงก์ให้",
+      "submit": "ส่งลิงก์รีเซ็ต",
+      "submitting": "กำลังส่ง…",
+      "remembered": "จำได้แล้ว?",
+      "logIn": "เข้าสู่ระบบ",
+      "sentTitle": "ตรวจสอบกล่องจดหมายของคุณ",
+      "sentSubtitle": "เราได้ทำเท่าที่ทำได้แล้ว",
+      "backToLogin": "กลับไปหน้าเข้าสู่ระบบ",
+      "sentNotice": "หากมีบัญชีสำหรับ {{email}} เราได้ส่งลิงก์เพื่อรีเซ็ตรหัสผ่านให้แล้ว ลิงก์จะหมดอายุภายในหนึ่งชั่วโมง",
+      "spamHint": "ไม่ได้รับอะไรเลย? ตรวจสอบโฟลเดอร์สแปม แล้ว",
+      "tryAnother": "ลองอีเมลอื่น",
+      "retires": " การส่งลิงก์ใหม่จะยกเลิกลิงก์เก่า"
+    },
+    "reset": {
+      "title": "เลือกรหัสผ่านใหม่",
+      "subtitle": "ลิงก์นี้ใช้ได้ครั้งเดียว และเฉพาะภายในหนึ่งชั่วโมงข้างหน้าเท่านั้น",
+      "newPassword": "รหัสผ่านใหม่",
+      "confirmPassword": "ยืนยันรหัสผ่านใหม่",
+      "passwordHint": "อย่างน้อย {{count}} ตัวอักษร",
+      "passwordTooShort": "รหัสผ่านต้องมีอย่างน้อย {{count}} ตัวอักษร",
+      "mismatch": "รหัสผ่านไม่ตรงกัน",
+      "submit": "ตั้งรหัสผ่านใหม่",
+      "submitting": "กำลังบันทึก…",
+      "changedMind": "เปลี่ยนใจ?",
+      "logIn": "เข้าสู่ระบบ",
+      "doneTitle": "เปลี่ยนรหัสผ่านแล้ว",
+      "doneSubtitle": "ตอนนี้คุณสามารถเข้าสู่ระบบด้วยรหัสผ่านนี้ได้",
+      "doneNotice": "รหัสผ่านของคุณได้รับการอัปเดตแล้ว และลิงก์รีเซ็ตถูกใช้ไปแล้ว ลิงก์อื่นๆ ที่คุณขอไว้จะใช้ไม่ได้อีกต่อไป",
+      "incompleteTitle": "ลิงก์นี้ไม่สมบูรณ์",
+      "incompleteSubtitle": "ขาดส่วนที่ยืนยันว่าเป็นของคุณ",
+      "noToken": "ไม่พบโทเค็นรีเซ็ตใน URL นี้",
+      "copyWholeLink": "คัดลอกลิงก์ทั้งหมดจากอีเมล หรือ",
+      "requestNew": "ขอลิงก์ใหม่"
+    }
+  },
+  "browse": {
+    "title": "ดูรายการ",
+    "subtitle": "สินค้ามือสองจากคนใกล้ตัว",
+    "searchPlaceholder": "ค้นหารายการ…",
+    "searchLabel": "ค้นหารายการ",
+    "allCities": "ทุกเมือง",
+    "filterByCity": "กรองตามเมือง",
+    "categoryAll": "ทั้งหมด",
+    "noneFoundTitle": "ไม่พบรายการ",
+    "widenSearch": "ลองขยายการค้นหา",
+    "nothingPosted": "ยังไม่มีการโพสต์",
+    "clearFilters": "ล้างตัวกรอง",
+    "loadMore": "โหลดเพิ่ม",
+    "loadMoreError": "ไม่สามารถโหลดรายการเพิ่มได้",
+    "favoriteError": "ไม่สามารถอัปเดตรายการโปรดได้"
+  },
+  "status": {
+    "active": "กำลังขาย",
+    "pending": "รอการซื้อขาย",
+    "sold": "ขายแล้ว",
+    "removed": "ถูกลบ"
+  },
+  "orderStatus": {
+    "pending": "รอการชำระเงิน",
+    "paid": "ชำระแล้ว",
+    "completed": "เสร็จสิ้น",
+    "cancelled": "ยกเลิก",
+    "refunded": "คืนเงินแล้ว"
+  },
+  "notFound": {
+    "title": "ไม่พบหน้านี้",
+    "back": "กลับไปหน้าค้นหา"
+  },
+  "listingDetail": {
+    "backToBrowse": "กลับไปหน้าค้นหา",
+    "notFoundTitle": "ไม่พบรายการ",
+    "notFoundBody": "อาจถูกขายหรือถูกนำลงแล้ว",
+    "errorTitle": "เกิดข้อผิดพลาด",
+    "viewImage": "ดูรูป {{index}}",
+    "listed": "ลงประกาศเมื่อ {{time}}",
+    "inCategory": "ในหมวด {{category}}",
+    "description": "รายละเอียด",
+    "placingOrder": "กำลังสั่งซื้อ…",
+    "buyFor": "ซื้อในราคา {{price}}",
+    "messageSeller": "ส่งข้อความหาผู้ขาย",
+    "editListing": "แก้ไขรายการ",
+    "pendingByOther": "มีคนอื่นกำลังรอซื้อสินค้านี้อยู่",
+    "save": "บันทึก",
+    "saved": "บันทึกแล้ว",
+    "someoneBought": "มีคนเพิ่งซื้อไปแล้ว กำลังโหลดใหม่…",
+    "couldNotOrder": "ไม่สามารถสั่งซื้อได้",
+    "seller": "ผู้ขาย",
+    "noReviewsYet": "ยังไม่มีรีวิว",
+    "reviewCount_other": "{{count}} รีวิว",
+    "showAllReviews": "แสดงทั้งหมด {{count}} รีวิว"
+  },
+  "dashboard": {
+    "title": "แดชบอร์ดของคุณ",
+    "noCity": "ยังไม่ได้ตั้งเมือง",
+    "tabs": {
+      "listings": "รายการของฉัน",
+      "orders": "คำสั่งซื้อ",
+      "favorites": "รายการโปรด"
+    },
+    "listings": {
+      "loadError": "ไม่สามารถโหลดรายการของคุณได้",
+      "removeError": "ไม่สามารถลบรายการนั้นได้",
+      "emptyTitle": "คุณยังไม่ได้ลงรายการใดเลย",
+      "sellCta": "ขายสินค้า",
+      "removing": "กำลังลบ…",
+      "remove": "ลบ",
+      "edit": "แก้ไข",
+      "listed": "ลงประกาศเมื่อ {{time}}"
+    },
+    "orders": {
+      "loadError": "ไม่สามารถโหลดคำสั่งซื้อได้",
+      "updateError": "ไม่สามารถอัปเดตคำสั่งซื้อนั้นได้",
+      "emptyTitle": "ยังไม่มีคำสั่งซื้อ",
+      "emptyBody": "สิ่งที่คุณซื้อและขายจะแสดงที่นี่",
+      "buying": "กำลังซื้อ",
+      "selling": "กำลังขาย",
+      "from": "จาก",
+      "to": "ถึง",
+      "leaveReview": "เขียนรีวิว",
+      "reviewed": "รีวิวแล้ว"
+    },
+    "actions": {
+      "markPaid": "ทำเครื่องหมายว่าชำระแล้ว",
+      "markCompleted": "ทำเครื่องหมายว่าเสร็จสิ้น",
+      "cancel": "ยกเลิก",
+      "refund": "คืนเงิน"
+    },
+    "review": {
+      "prompt": "ประสบการณ์ของคุณกับ {{name}} เป็นอย่างไร?",
+      "needRating": "เลือกคะแนน 1 ถึง 5 ดาว",
+      "saveError": "ไม่สามารถบันทึกรีวิวนั้นได้",
+      "placeholder": "มีอะไรที่ควรรู้ไหม? (ไม่บังคับ)",
+      "posting": "กำลังโพสต์…",
+      "post": "โพสต์รีวิว",
+      "cancel": "ยกเลิก",
+      "label": "รีวิว"
+    },
+    "favorites": {
+      "loadError": "ไม่สามารถโหลดรายการโปรดของคุณได้",
+      "emptyTitle": "ยังไม่ได้บันทึกอะไรเลย",
+      "emptyBody": "แตะรูปหัวใจบนรายการใดก็ได้เพื่อบันทึกไว้ที่นี่",
+      "browseCta": "ดูรายการ"
+    }
+  },
+  "messages": {
+    "title": "ข้อความ",
+    "loadError": "ไม่สามารถโหลดการสนทนาได้",
+    "threadLoadError": "ไม่สามารถโหลดการสนทนานั้นได้",
+    "sendError": "ไม่สามารถส่งข้อความนั้นได้",
+    "emptyThreads": "ยังไม่มีการสนทนา ส่งข้อความหาผู้ขายจากรายการใดก็ได้",
+    "selectConversation": "เลือกการสนทนา",
+    "conversation": "การสนทนา",
+    "listingFallback": "รายการ #{{id}}",
+    "noMessages": "ยังไม่มีข้อความ ทักทายได้เลย",
+    "youPrefix": "คุณ: ",
+    "writeMessage": "เขียนข้อความ…",
+    "messageLabel": "ข้อความ",
+    "sending": "กำลังส่ง…",
+    "send": "ส่ง",
+    "activeNow": "กำลังออนไลน์",
+    "offline": "ออฟไลน์",
+    "lastSeen": "เห็นล่าสุด {{time}}",
+    "receiptRead": "อ่านแล้ว",
+    "receiptSent": "ส่งแล้ว"
+  },
+  "profile": {
+    "title": "โปรไฟล์ของคุณ",
+    "subtitle": "นี่คือสิ่งที่ผู้ซื้อและผู้ขายเห็นเมื่อติดต่อกับคุณ",
+    "uploadError": "ไม่สามารถอัปโหลดรูปนั้นได้",
+    "nameRequired": "ต้องมีชื่อที่แสดง",
+    "saved": "บันทึกโปรไฟล์แล้ว",
+    "avatarAlt": "รูปโปรไฟล์ของคุณ",
+    "uploading": "กำลังอัปโหลด…",
+    "changePhoto": "เปลี่ยนรูป",
+    "uploadPhoto": "อัปโหลดรูป",
+    "remove": "ลบ",
+    "photoHint": "JPEG, PNG, WebP หรือ GIF ขนาดไม่เกิน 10MB",
+    "displayName": "ชื่อที่แสดง",
+    "city": "เมือง",
+    "cityPlaceholder": "กรุงเทพฯ",
+    "cityHint": "รายการใหม่จะถูกติดป้ายด้วยเมืองนี้ รายการที่คุณลงไปแล้วจะเก็บเมืองเดิมไว้",
+    "phone": "โทรศัพท์",
+    "optional": "(ไม่บังคับ)",
+    "email": "อีเมล",
+    "emailHint": "ไม่สามารถเปลี่ยนอีเมลได้ที่นี่",
+    "uploadingPhoto": "กำลังอัปโหลดรูป…",
+    "saving": "กำลังบันทึก…",
+    "saveChanges": "บันทึกการเปลี่ยนแปลง"
+  },
+  "listingForm": {
+    "title": "ชื่อรายการ",
+    "titlePlaceholder": "iPhone 12 Mini, 128GB, unlocked",
+    "price": "ราคา",
+    "pricePlaceholder": "34.50",
+    "condition": "สภาพ",
+    "category": "หมวดหมู่",
+    "optional": "(ไม่บังคับ)",
+    "noCategory": "ไม่มีหมวดหมู่",
+    "description": "รายละเอียด",
+    "descriptionPlaceholder": "สภาพ จุดที่ควรรู้ เหตุผลที่ขาย…",
+    "photos": "รูปภาพ",
+    "photosHint": "(รูปแรกเป็นหน้าปก)",
+    "titleRequired": "ต้องมีชื่อรายการ",
+    "priceInvalid": "ราคาต้องเป็นตัวเลข ทศนิยมไม่เกิน 2 ตำแหน่ง เช่น 19.99",
+    "cancel": "ยกเลิก",
+    "uploadingPhotos": "กำลังอัปโหลดรูป…"
+  },
+  "create": {
+    "title": "ขายสินค้า",
+    "subtitle": "รายการของคุณจะถูกติดป้ายด้วยเมืองในโปรไฟล์ของคุณ",
+    "submit": "ลงประกาศ",
+    "submitting": "กำลังลงประกาศ…"
+  },
+  "edit": {
+    "title": "แก้ไขรายการ",
+    "subtitle": "การเปลี่ยนแปลงจะมีผลทันทีเมื่อบันทึก",
+    "submit": "บันทึกการเปลี่ยนแปลง",
+    "submitting": "กำลังบันทึก…",
+    "loadErrorTitle": "ไม่สามารถแก้ไขรายการนี้ได้",
+    "notOwner": "คุณแก้ไขได้เฉพาะรายการของคุณเอง",
+    "notFound": "รายการนี้ไม่มีอยู่แล้ว",
+    "invalidId": "ไอดีรายการไม่ถูกต้อง",
+    "backToListings": "กลับไปที่รายการของคุณ"
+  },
+  "uploader": {
+    "addMore_other": "คุณเพิ่มได้อีก {{count}} รูป",
+    "uploadFailed": "อัปโหลดล้มเหลว กรุณาลองใหม่อีกครั้ง",
+    "cover": "หน้าปก",
+    "movePhotoEarlier": "ย้ายรูป {{index}} ไปก่อนหน้า",
+    "movePhotoLater": "ย้ายรูป {{index}} ไปหลัง",
+    "removePhoto": "ลบรูป {{index}}",
+    "uploading": "กำลังอัปโหลด…",
+    "choosePhotos": "คลิกเพื่อเลือกรูป",
+    "uploadingHint": "กรุณารอสักครู่ — อาจใช้เวลาสักหน่อยหากอินเทอร์เน็ตช้า",
+    "dragHint": "หรือลากมาวางที่นี่ JPEG, PNG, WebP หรือ GIF ขนาดไม่เกิน 10MB เหลือ {{count}} รูป"
+  }
+}

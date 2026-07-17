@@ -1,0 +1,35 @@
+/*
+ * Inter, self-hosted via the @fontsource-variable package (installed from npm),
+ * not hotlinked from fonts.googleapis.com. The bytes ship from our own origin:
+ * no third-party request per page load, no user IP handed to Google, works
+ * offline, and nothing for a Content-Security-Policy to allow.
+ *
+ * The "Variable" build is a single file spanning every weight (100–900), so all
+ * of Tailwind's font-* weights resolve from it without a file each.
+ *
+ * @import must precede the @tailwind rules — CSS requires imports at the top.
+ */
+@import '@fontsource-variable/inter/index.css';
+/*
+ * Inter covers Latin but has no Lao or Thai glyphs — without these the app's
+ * Lao/Thai text would render as tofu boxes (□□□). The browser falls through the
+ * font-family stack (see the Tailwind config) to whichever font has the glyph,
+ * so Latin stays Inter while Lao picks up Noto Sans Lao and Thai picks up IBM
+ * Plex Sans Thai. All self-hosted, for the same reasons as Inter.
+ *
+ * Lao: Noto Sans Lao is a single variable file (every weight).
+ *
+ * Thai: IBM Plex Sans Thai — a loopless, modern face chosen to sit cleanly next
+ * to Inter. It has no variable build, so we load the four static weights the UI
+ * actually uses (400 body, 500/600 medium/semibold, 700 bold) rather than the
+ * whole family.
+ */
+@import '@fontsource-variable/noto-sans-lao/index.css';
+@import '@fontsource/ibm-plex-sans-thai/400.css';
+@import '@fontsource/ibm-plex-sans-thai/500.css';
+@import '@fontsource/ibm-plex-sans-thai/600.css';
+@import '@fontsource/ibm-plex-sans-thai/700.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
