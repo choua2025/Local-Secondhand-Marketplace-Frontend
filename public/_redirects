@@ -1,0 +1,5 @@
+# SPA fallback for Cloudflare Pages: serve index.html for any path that isn't a
+# real file, so BrowserRouter routes (e.g. /listings/5) survive a hard refresh
+# instead of 404ing. Vite copies this file from public/ to the dist/ root at
+# build time. Vercel ignores it (it uses vercel.json), so keeping both is safe.
+/*    /index.html   200
