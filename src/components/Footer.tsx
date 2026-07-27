@@ -30,9 +30,6 @@ export function Footer(): React.JSX.Element {
             </Link>
             <p className="mt-3 max-w-sm text-sm leading-relaxed text-slate-500">
               {t('footer.tagline')}
-
-              This is a demo project for educational purposes. It is not a real marketplace,
-
             </p>
           </div>
 
