@@ -193,10 +193,20 @@ jobs:
         env:
           VITE_API_URL: ${{ steps.api.outputs.url }}
 
+      # `pages deploy` fails outright if the project does not exist yet, and the
+      # wrapping action hides wrangler's real message. Create it first so the run
+      # is self-healing; `|| true` swallows the "already exists" error on every
+      # subsequent run, leaving this a no-op once the project is there.
+      - name: Ensure Pages project exists
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+        run: |
+          npx --yes wrangler@3 pages project create local-secondhand-marketplace-frontend \
+            --production-branch=main || true
+
       # Uploads the static dist/ to Cloudflare Pages. --branch=main makes it a
       # production deployment (assuming the project's production branch is main).
-      # The project name must match an existing Pages project — create it once
-      # with `wrangler pages project create` or in the Cloudflare dashboard.
       - name: Deploy to Cloudflare Pages
         uses: cloudflare/wrangler-action@v3
         with:
