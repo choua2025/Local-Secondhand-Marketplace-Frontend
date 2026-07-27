@@ -156,7 +156,7 @@ jobs:
         run: vercel deploy --prebuilt --prod --token=${{ secrets.VERCEL_TOKEN }}
 
   cloudflare:
-    name: Deploy to Cloudflare Pages
+    name: Deploy to Cloudflare
     needs: quality
     # Same gate as the other deploys: production ships only from a real push to
     # main, never from a PR (which may be unreviewed and, from a fork, secretless).
@@ -187,7 +187,8 @@ jobs:
           echo "url=$url" >> "$GITHUB_OUTPUT"
 
       # Vite inlines VITE_* at build time, so the API origin is frozen into the
-      # bundle now. public/_redirects is copied into dist for the SPA fallback.
+      # bundle now. SPA-route fallback is handled by wrangler.jsonc, not a file
+      # in the bundle.
       - name: Build
         run: npm run build
         env:
@@ -209,26 +210,13 @@ jobs:
             exit 1
           fi
 
-      # `pages deploy` fails outright if the project does not exist yet. Create it
-      # first so the run is self-healing; `|| true` swallows the harmless "already
-      # exists" error on every subsequent run. wrangler's real output still prints
-      # to the log, so a genuine auth failure here is visible rather than masked.
-      - name: Ensure Pages project exists
+      # Deploys the built dist/ as a Workers Static Assets project, reading name
+      # and the SPA config from wrangler.jsonc. `wrangler deploy` creates the
+      # Worker on first run and updates it after, so no pre-create step is needed.
+      # Called directly (not via cloudflare/wrangler-action) so wrangler's own
+      # error reaches the log instead of a bare "npx failed with exit code 1".
+      - name: Deploy to Cloudflare
         env:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-        run: |
-          npx --yes wrangler@3 pages project create local-secondhand-marketplace-frontend \
-            --production-branch=main || true
-
-      # Called directly rather than through cloudflare/wrangler-action, because
-      # that wrapper collapses any failure to a bare "npx failed with exit code 1"
-      # and hides the actual error. Here wrangler's own message reaches the log.
-      - name: Deploy to Cloudflare Pages
-        env:
-          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-        run: |
-          npx --yes wrangler@3 pages deploy dist \
-            --project-name=local-secondhand-marketplace-frontend \
-            --branch=main
+        run: npx --yes wrangler@4 deploy

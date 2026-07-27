@@ -1,0 +1,19 @@
+{
+  // Cloudflare Workers Static Assets config for hosting this Vite SPA.
+  //
+  // We use Workers (not Pages) because Cloudflare's newer deploy pipeline
+  // rejects the classic Pages SPA rule `/* /index.html 200` in _redirects with
+  // an "infinite loop detected" error, and `wrangler pages deploy` has no config
+  // key for SPA fallback. Workers Static Assets handles it natively below.
+  "name": "local-secondhand-marketplace-frontend",
+  "compatibility_date": "2025-07-01",
+
+  "assets": {
+    // Vite's build output. `wrangler deploy` uploads this directory as-is.
+    "directory": "./dist",
+    // Serves index.html for any navigation request that doesn't map to a real
+    // file, so BrowserRouter routes (e.g. /listings/5) survive a hard refresh
+    // instead of 404ing. This is the native replacement for the _redirects rule.
+    "not_found_handling": "single-page-application"
+  }
+}
