@@ -193,10 +193,26 @@ jobs:
         env:
           VITE_API_URL: ${{ steps.api.outputs.url }}
 
-      # `pages deploy` fails outright if the project does not exist yet, and the
-      # wrapping action hides wrangler's real message. Create it first so the run
-      # is self-healing; `|| true` swallows the "already exists" error on every
-      # subsequent run, leaving this a no-op once the project is there.
+      # Fail early with a readable message if the secrets are missing — otherwise
+      # wrangler fails deep inside with an opaque auth error. This is the single
+      # most common cause of the deploy going red on first setup.
+      - name: Check Cloudflare secrets
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+        run: |
+          missing=
+          [ -z "$CLOUDFLARE_API_TOKEN" ] && missing="$missing CLOUDFLARE_API_TOKEN"
+          [ -z "$CLOUDFLARE_ACCOUNT_ID" ] && missing="$missing CLOUDFLARE_ACCOUNT_ID"
+          if [ -n "$missing" ]; then
+            echo "::error::Missing repo secret(s):$missing — add them under Settings > Secrets and variables > Actions > Secrets."
+            exit 1
+          fi
+
+      # `pages deploy` fails outright if the project does not exist yet. Create it
+      # first so the run is self-healing; `|| true` swallows the harmless "already
+      # exists" error on every subsequent run. wrangler's real output still prints
+      # to the log, so a genuine auth failure here is visible rather than masked.
       - name: Ensure Pages project exists
         env:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
@@ -205,11 +221,14 @@ jobs:
           npx --yes wrangler@3 pages project create local-secondhand-marketplace-frontend \
             --production-branch=main || true
 
-      # Uploads the static dist/ to Cloudflare Pages. --branch=main makes it a
-      # production deployment (assuming the project's production branch is main).
+      # Called directly rather than through cloudflare/wrangler-action, because
+      # that wrapper collapses any failure to a bare "npx failed with exit code 1"
+      # and hides the actual error. Here wrangler's own message reaches the log.
       - name: Deploy to Cloudflare Pages
-        uses: cloudflare/wrangler-action@v3
-        with:
-          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-          command: pages deploy dist --project-name=local-secondhand-marketplace-frontend --branch=main
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+        run: |
+          npx --yes wrangler@3 pages deploy dist \
+            --project-name=local-secondhand-marketplace-frontend \
+            --branch=main
