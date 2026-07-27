@@ -31,7 +31,8 @@ export function Footer(): React.JSX.Element {
             <p className="mt-3 max-w-sm text-sm leading-relaxed text-slate-500">
               {t('footer.tagline')}
 
-              This project is open source, and the code is available on GitHub.hhhhhh
+              This is a demo project for educational purposes. It is not a real marketplace, and no transactions should be attempted.
+              
             </p>
           </div>
 
