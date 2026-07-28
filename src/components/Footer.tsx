@@ -30,6 +30,7 @@ export function Footer(): React.JSX.Element {
             </Link>
             <p className="mt-3 max-w-sm text-sm leading-relaxed text-slate-500">
               {t('footer.tagline')}
+              Yes
             </p>
           </div>
 
