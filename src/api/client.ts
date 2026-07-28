@@ -73,6 +73,7 @@ async function request<T>(path: string, init?: RequestInit): Promise<T> {
   let response: Response;
   try {
     response = await fetch(`${BASE_URL}${path}`, { ...init, headers });
+    console.log('fetch', `${BASE_URL}${path}`, response);
   } catch {
     // fetch only rejects on a network-level failure — the server being down,
     // DNS, CORS. An HTTP 500 is a *resolved* promise, handled below.
