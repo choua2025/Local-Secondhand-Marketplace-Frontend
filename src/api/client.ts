@@ -28,7 +28,7 @@ import type {
   UserReviews,
 } from '../types';
 
-const BASE_URL = 'http://localhost:4001/api';
+const BASE_URL = import.meta.env['VITE_API_URL'] ?? 'http://localhost:4001/api';
 
 /**
  * An error carrying the HTTP status, so a caller can distinguish "not found"
